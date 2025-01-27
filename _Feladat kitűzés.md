@@ -1,16 +1,25 @@
 # Tartalom
-- [Tartalom](#tartalom)
+- [Vizsgakövetelmények](#vizsgakövetelmények)
+  - [csapat, feladat, határidő](#csapat-feladat-határidő)
+  - [Elvárások](#elvárások)
+    - [Kliens oldal](#kliens-oldal)
+    - [Tartalmi követelmény](#tartalmi-követelmény)
+    - [Vizsgaremek bemutató](#vizsgaremek-bemutató)
+    - [Vizsgaremek pontozás](#vizsgaremek-pontozás)
 - [Ütemezés](#ütemezés)
-    - [2023.02.20-26](#2023.02.20-26)
-- [Általános feladtok](#általnos-feladtok)
+  - [2025. janauár vége környezet](#2025-janauár-vége-környezet)
+  - [2025. február adatbázis, backend](#2025-február-adatbázis-backend)
+  - [2025. március frontend](#2025-március-frontend)
+  - [2025. április](#2025-április)
+- [Általános feladtok](#általános-feladtok)
   - [Fejlesztési környezet](#fejlesztési-környezet)
   - [Egyéb előírások](#egyéb-előírások)
-
-- [Recept](#recept)
-- [História](#história)
-- [Sportverseny](#sportverseny)
-- [Film](#film)
-- [Kölcsönzés](#kölcsönzés)
+- [A kiosztott feladatok](#a-kiosztott-feladatok)
+  - [Recept](#recept)
+  - [História](#história)
+  - [Sportverseny](#sportverseny)
+  - [Film](#film)
+  - [Kölcsönzés](#kölcsönzés)
 
 # Vizsgakövetelmények
 ## csapat, feladat, határidő
@@ -71,9 +80,9 @@
 # Ütemezés
 ## 2025. janauár vége környezet
 - feladat megértés
-- ütemterv elkészítés
+- github repó létrehozás, kollaboráció megvalósítása
 - kommunikációs környezet kialakítás
-- github saját repó létrehozás
+- ütemterv elkészítés
 - fejlesztési környezet létrehozás
 ## 2025. február adatbázis, backend
 - adatbázis tervezés
@@ -91,7 +100,6 @@
     - funkcionális
     - integrációs
 - backend dokumentálás    
-`document_database/projektnev.sql`
 
 ## 2025. március frontend
 - frontend környezet felállítás
@@ -130,25 +138,18 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
             - diagram
             - Teszt adatok
         - Backend leírása
-            - sql gyűjtemény
-            - Milyen modulok
-            - Milyen fájlok
-            - Data server
-                - .env
-                - Kapcsolódás az adatbázishoz
-                - get, post, put, delete
-                - middleware
-                    - json
-                    - cors
-                    - autentikáció
+            - endpointok
             - Auth server
                 - Bejelentkezés
                 - Token
             - pingelés (request rest)
-
+            - tesztek leírása
+            - teszt dokumentáció
 
         - Frontend leírás
             - Mi a program célja
+            - Használati útmutató
+                - Le kell írni, képernyő képekkel hogy a produktumot hogy kell használni
             - Milyen modulok
             - Milyen fájlok
                 - store
@@ -159,11 +160,7 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
                     - Belépési pont: App.vue, main.js
                     - Head
                     - Menü
-                    - Tatalom
 
-
-    - `Users Guide.md` (Használati útmutató)
-        - Le kell írni, képernyő képekkel hogy a produktumot hogy kell használni
     - `Presentation.ppt`  
         - Egy max 15 perces bemutató előadást támogató prozentáció
             - Személyes bemutatkozás
@@ -184,23 +181,6 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
             - Milyen irányban kell továbbfejleszteni
             - Egy kód részletet kiemelni és bemutatni
 
-    - dokumentációs mappák:
-        - `document_database`
-            - `adatbázis modellje`: kép és fájl
-            - `projektnev.sql`
-                - Adatgerenerálás: tárolt eljárások, függvények
-                - A backendben használt sql lekérdezések
-            - biztonsági mentés
-        - `server` mappa
-            - Legyen egy adat szerver
-            - Autentikációs szerver
-            - npm csomagkezelés
-        - `frontend` mappa
-            - ide kerüljön a frontend, 
-            - ami lehet teljesen független a szervertől
-            - nem kötelező, hogy a szerver publikálja
-            - npm csomagkezelés
-
 ## Egyéb előírások
 - nyelvi előírások
     - Az objektumok (adatbázis, mező nevek, függvények, vátlozók stb. ) elnevezései angol nyelvűek.
@@ -210,7 +190,7 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
 - Működési környezet
     - A produktum elég, ha a feljesztő környezetben működik, nem kell élesben telepíteni.
 
-- Autentikáció kötelező javasolt: jwt token
+- Autentikáció kötelező
     - users tábla
     - Regisztráció
     - Login
@@ -220,11 +200,13 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
         - vendég: olvashatja az adatokat
         - Az oldal betöltésekor kötelező vagy regisztrálni, vagy belépni.
 
-# Recept
+# A kiosztott feladatok
+
+## Recept
 Csapattagok: Fehér Zsolt Dorián, Juhász Gergő
 ![adatbázis modell](_sources/Recept/recept.jpg)
 
-# História
+## História
 **Csapattagok**: Kovács János, Jáger Kristóf
 
 Egy történelemmel foglalkozó adatbázist szertnénk létrehozni, aminek fő célja, hogy segítse az érettségire készülő diákokat.
@@ -232,7 +214,7 @@ Egy történelemmel foglalkozó adatbázist szertnénk létrehozni, aminek fő c
 - Ezen túl előre kidolgozott tesztek segítenék a tanulást. A diákoknak nyújtanák véletelenszerű vagy tematikus név, évszám teszteket.
 ![adatbázis modell](_sources/Historia/historia.jpg)
 
-# Sportverseny
+## Sportverseny
 
 **Csapattagok**: Medgyes Csaba, Ledacs-Kiss Bence
 
@@ -246,12 +228,11 @@ A szisztéma lényege:
 - A végén a rengsor pontokat csapatonként összegzi, és így alakul ki a végső rangsor.
 ![adatbázis modell](_sources/Sportverseny/sportverseny.jpg)
 
-# Film
+## Film
 Csapattagok: Molnár Krisztián, Hajdu István, Polyák Alex János
 ![adatbázis modell](_sources/Film/film.jpg)
 
-
-# Kölcsönzés
+## Kölcsönzés
 Csapattagok: Oláh Péter, Nagy Ferenc
 ![adatbázis modell](_sources/Kolcsonzes/kolcsonzes.jpg)
 
