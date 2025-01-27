@@ -12,6 +12,61 @@
 - [Film](#film)
 - [Kölcsönzés](#kölcsönzés)
 
+# Vizsgakövetelmények
+## csapat, feladat, határidő
+- A vizsgázóknak **minimum 2, maximum 3 fős** fejlesztői csapatot alkotva kell a vizsgát megelőzően 
+- egy komplex szoftveralkalmazást (vizsgaremek) fejleszteniük 
+- a tanév során
+- Beadás: a vizsgát megelőző 14 nap, GITHUB platformon.
+
+## Elvárások
+- **Életszerű**, valódi problémára nyújt megoldást. 
+- Adattárolási és -kezelési funkciókat is megvalósít (**CRUD**). 
+- **RESTful** architektúrának megfelelő **szerver és kliens oldali** komponenseket egyaránt tartal-maz. 
+- A forráskódnak a **tiszta kód elveinek** megfelelően kell készülnie. 
+- A szoftver célját, komponenseinek technikai leírását, működésének műszaki feltételeit és használatának rövid bemutatását tartalmazó **dokumentáció** is része a csomagnak. 
+
+### Kliens oldal
+- Alkalmasnak kell lennei asztali és mobil eszközökön történő használatra. 
+- Mobil eszközre kifejlesztett kliens esetén natív mobil alkalmazás, vagy azzal hozzávetőlegesen megegyező felhasználói élményt nyújtó webes kliens egyaránt alkalmazható. 
+- Asztali eszközökre fejlesztett kliens oldali komponensnél mindenképpen szükséges webes megvalósítás is, de emellett opcionálisan natív, asztali alkalmazás is a cso-mag része lehet. 
+- Példa: A felhasználóknak szánt interfész webes megjelenítést használ, míg az adminisztrációs felület natív asztali alkalmazásként készül el 
+
+## Tartalmi követelmény
+- A megosztott anyagnak tartalmaznia kell az alábbiakat: 
+    - A szoftver **forráskódja**, 
+    - Natív asztali alkalmazások esetén a program telepítőkészlete, 
+    - Az adatbázis **adatbázismodell**-diagramja, 
+    - Az adatbázis export fájlja (**biztonsági másolat**), 
+    - A szoftveralkalmazás **dokumentációja**, 
+    - A **tesztekhez végzett kód**, 
+    - valamint a **teszteredmények dokumentációja**. 
+
+## Vizsgaremek bemutató
+- A vizsgarész során a vizsgázó gyakorlati bemutatóval összekapcsolt **szóbeli előadás** formájában mutatja be a 
+    - szoftver célját, 
+    - műszaki megvalósítását, 
+    - működését, 
+    - forráskódját, 
+    - a csapaton belüli **munkamegosztást**, a fejlesztési csapatban betöltött szerepét, a fejlesztés so-rán használt projektszervezési eszközöket. 
+- A fentieken túl maximum **3-5 perces angol nyelven** tartott szóbeli előadás formájában **összefoglalót** ad a szoftver céljáról és működéséről
+- valamint **angolul válaszol** a vizsgáztató végfelhasználói szerepben feltett maximum 2-3 kérdésére.
+- a bemutatót **közösen is megtarthatják**, 
+    - minden vizsgázó **egyenlő arányban** vegyen részt a bemutatóban, 
+    - minden vizsgázónak **önállóan kell bemutatnia a saját feladatrészét** 
+    - magyarul és angolul egyaránt.
+
+## Vizsgaremek pontozás
+- a szoftver átfogó értékelése (a választott téma életszerűsége, az elkészült szoftver hasz-nossága, a komplexitás és kidolgozottság mértéke, milyen mértékben és minőségben valósította meg a szoftver a kitűzött célt, felhasználói élmény minősége): 5 pont 
+- adatbázis-tervezés és megvalósítás: 5 pont 
+- szerver oldali komponens (backend): 10 pont 
+- asztali használatra készült kliens oldali komponens (frontend): 10 pont 
+- mobil használatra készült kliens oldali komponens: 10 pont 
+- a kód minősége: 3 pont 
+- a dokumentáció minősége és részletezettsége: 2 pont 
+- a szoftver tesztelésének bemutatása: 3 pont 
+- a szoftver bemutatása során a vizsgázó előadásának szakszerűsége, illetve az angol nyelvű kommunikáció minősége: 3 pont 
+- a csapatmunka megvalósítása: 4 pont 
 
 # Ütemezés
 ## 2025. janauár vége környezet
