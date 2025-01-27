@@ -8,7 +8,7 @@
 
 - [Recept](#recept)
 - [História](#história)
-- [Sportverseny](#portverseny)
+- [Sportverseny](#sportverseny)
 - [Film](#film)
 - [Kölcsönzés](#kölcsönzés)
 
@@ -178,6 +178,7 @@ Egy történelemmel foglalkozó adatbázist szertnénk létrehozni, aminek fő c
 ![adatbázis modell](_sources/Historia/historia.jpg)
 
 # Sportverseny
+
 **Csapattagok**: Medgyes Csaba, Ledacs-Kiss Bence
 
 Egy excel táblában szemléletett sportverseny szisztémát kéne megvalósítani, amivel egy iskolai rendezvény szervezését bonyolítanánk le.
