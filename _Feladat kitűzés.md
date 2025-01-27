@@ -7,7 +7,7 @@
   - [Egyéb előírások](#egyéb-előírások)
 
 - [Recept](#recept)
-- [História](#historia)
+- [História](#história)
 - [Sportverseny](#portverseny)
 - [Film](#film)
 - [Kölcsönzés](#kölcsönzés)
