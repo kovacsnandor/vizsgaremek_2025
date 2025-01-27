@@ -171,6 +171,9 @@ Csapattagok: Fehér Zsolt Dorián, Juhász Gergő
 
 # História
 Csapattagok: Kovács János, Jáger Kristóf
+Egy történelemmel foglalkozó adatbázist szertnénk létrehozni, aminek fő célja, hogy segítse az érettségire készülő diákokat.
+- Lenne egy beviteli felülete, amint keresztül tananyagot lehetne feltölteni, megjelölve a forrásokat.
+- Ezen túl előre kidolgozott tesztek segítenék a tanulást. A diákoknak nyújtanák véletelenszerű vagy tematikus név, évszám teszteket.
 ![adatbázis modell](_sources/Historia/historia.jpg)
 
 # Sportverseny
