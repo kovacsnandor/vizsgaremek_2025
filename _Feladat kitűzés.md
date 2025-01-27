@@ -170,14 +170,24 @@ Csapattagok: Fehér Zsolt Dorián, Juhász Gergő
 ![adatbázis modell](_sources/Recept/recept.jpg)
 
 # História
-Csapattagok: Kovács János, Jáger Kristóf
+**Csapattagok**: Kovács János, Jáger Kristóf
+
 Egy történelemmel foglalkozó adatbázist szertnénk létrehozni, aminek fő célja, hogy segítse az érettségire készülő diákokat.
 - Lenne egy beviteli felülete, amint keresztül tananyagot lehetne feltölteni, megjelölve a forrásokat.
 - Ezen túl előre kidolgozott tesztek segítenék a tanulást. A diákoknak nyújtanák véletelenszerű vagy tematikus név, évszám teszteket.
 ![adatbázis modell](_sources/Historia/historia.jpg)
 
 # Sportverseny
-Csapattagok: Medgyes Csaba, Ledacs-Kiss Bence
+**Csapattagok**: Medgyes Csaba, Ledacs-Kiss Bence
+
+Egy excel táblában szemléletett sportverseny szisztémát kéne megvalósítani, amivel egy iskolai rendezvény szervezését bonyolítanánk le.
+A szisztéma lényege: 
+- különböző állomásokon különféle sportágak, feladatok várják a résztvevőket.
+- Egy csoport tagjainak eredményeit (idő, távolság, pontszám stb.) összegzik
+- A program az így összesített eredményeket az adott helyszínen csökkenő sorrendben rakja és aki első az kapja a legtöbb pontot, és ha kell súlyozza.
+    - A pontszám megyegyezik azzal a számmal, hogy a listában hanyadik
+    - A praméterezésben meg lehet adni, hogy az eredményeket csökkenő, vagy növekvő sorrendbe kell rendezni.
+- A végén a rengsor pontokat csapatonként összegzi, és így alakul ki a végső rangsor.
 ![adatbázis modell](_sources/Sportverseny/sportverseny.jpg)
 
 # Film
