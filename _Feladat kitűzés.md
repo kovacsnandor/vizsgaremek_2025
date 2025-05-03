@@ -1,25 +1,3 @@
-# Tartalom
-- [Vizsgakövetelmények](#vizsgakövetelmények)
-  - [csapat, feladat, határidő](#csapat-feladat-határidő)
-  - [Elvárások](#elvárások)
-    - [Kliens oldal](#kliens-oldal)
-    - [Tartalmi követelmény](#tartalmi-követelmény)
-    - [Vizsgaremek bemutató](#vizsgaremek-bemutató)
-    - [Vizsgaremek pontozás](#vizsgaremek-pontozás)
-- [Ütemezés](#ütemezés)
-  - [2025. janauár vége környezet](#2025-janauár-vége-környezet)
-  - [2025. február adatbázis, backend](#2025-február-adatbázis-backend)
-  - [2025. március frontend](#2025-március-frontend)
-  - [2025. április](#2025-április)
-- [Általános feladtok](#általános-feladtok)
-  - [Fejlesztési környezet](#fejlesztési-környezet)
-  - [Egyéb előírások](#egyéb-előírások)
-- [A kiosztott feladatok](#a-kiosztott-feladatok)
-  - [Recept](#recept)
-  - [História](#história)
-  - [Sportverseny](#sportverseny)
-  - [Film](#film)
-  - [Kölcsönzés](#kölcsönzés)
 
 # Vizsgakövetelmények
 ## csapat, feladat, határidő
@@ -124,64 +102,134 @@
 A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
 
 ## Fejlesztési környezet
-- gitHub repo: 
-    - kötelező
-    - itt kell fejleszteni
-    - a repo neve: a feladat neve
-    - `RADME.md`
-        - Mi ez a program
-        - Itt kell leírni, hogy a feladatot hogy kell üzembe helyezni
-    - `Technical description.md` (Műszaki leírás)
-        - Le kell írni struktúráltan hogy működik a feladat, magyar nyelven.
+### gitHub repo: 
+- kötelező
+- itt kell fejleszteni
+- a repo neve: a feladat neve
+Két mappa:
+- `Backend`
+- `Frontend`
+### Dokumentumok
+A dokumentumok a repo gyökér könyvtárába kerüljenek, pontosan ilyen elnevezésekkel
+
+- `RADME.md` (A szoftver működésének műszaki feltételei)
+    - A fejlesztési környezethez szükséges szoftverek
+    - Forráskód letöltése
+    - A program teszt környezetéenk telepítése, futtatása
+
+- `Dokumentáció.md` (A szoftver célja, komponenseinek technikai leírása, használatának rövid bemutatása)
+    - A szoftver célja: A feladat rövid leírása
+    - Használatának rövid bemutatása: Képerynőképekkel, hogy működik a program
+    - komponenseinek technikai leírása: 
         - Mappa struktúra
         - Adatbázis 
             - diagram
-            - Teszt adatok
-        - Backend leírása
+            - Tábla és mezőleírások
+        - Backend
             - endpointok
             - Auth server
                 - Bejelentkezés
                 - Token
-            - pingelés (request rest)
-            - tesztek leírása
-            - teszt dokumentáció
 
         - Frontend leírás
             - Mi a program célja
             - Használati útmutató
                 - Le kell írni, képernyő képekkel hogy a produktumot hogy kell használni
             - Milyen modulok
+            - Oldal szerkezet
+                - Belépési pont: App.vue, main.js
+                - Head
+                - Menü
+            - Jogosultsági rendszer kezelése
+                - Backend szinten
+                - Menü szinten
+                - Route szinten   
             - Milyen fájlok
                 - store
                 - komponensek
                 - views
                 - router
-                - Oldal szerkezet
-                    - Belépési pont: App.vue, main.js
-                    - Head
-                    - Menü
+- `Tesztek.md` (A tesztekhez végzett kód, valamint a teszteredmények dokumentációja)
+    - Kézi teszt: pingelés (request rest)
+        - request.rest szerkezete
+        - Bejelentkezés
+        - Minta kód CRUD műveletekre
+    - Backend tesztek
+        - Unit tesztek
+        - Funkcionális tesztek
+        - End-point tesztek
+        - Teszt lefutási képernyőkép dokumentálása
+    - Frontend tesztek
+        - Teszt fajta megnevezése
+        - A tesztek kódja
+        - A teszt eredményének dokumentálása
 
-    - `Presentation.ppt`  
-        - Egy max 15 perces bemutató előadást támogató prozentáció
-            - Személyes bemutatkozás
-                - Mi a szakterület, mihez értek
-                - Milyen terveim vannak
-            - Mi a feladat célja
-                - mit csinál
-                - mit tud aprogram
-                - bejelentkezés
-            - Mi a feljesztési környezet
-                - pl. Mysql adatbázis, Vusj kliens, Nodejs Backend, github
-            - Milyen az adatbázis 
-                - diagram, 
-                - teszt adatok
-                - Anyaggyűjtés
-            - Be kell mutatni működés közben
-            - Meddig jutottam el
-            - Milyen irányban kell továbbfejleszteni
-            - Egy kód részletet kiemelni és bemutatni
+- `Diagram.png` (Az adatbázis adatbázismodell-diagramja)
+- `AdatbazisBackup.sql` (Az adatbázis export fájlja)
 
-## Egyéb előírások
+
+# Az előadást segítő eszközök
+Ez már ne legyen a repóban
+
+- `Presentation.ppt`  
+    - Egy max 30 perc/fő bemutató előadást támogató prozentáció
+        - Célszerű lenne felváltva beszélni
+        - Személyes bemutatkozás
+            - Mi a szakterület, mihez értek
+            - Milyen terveim vannak
+        - Mi a feladat célja általánosan, világosan
+            - mit csinál
+            - mit tud a program
+            - milyen szerepkörök vannak
+        - Csapatmunka bemutatása
+            - Ki mit csinált: munkamegosztás
+            - Milyen csapatmunka eszközöket használtatok
+                - Feladat kiosztás
+                - Kommunikáció
+        - Milyen fejlesztési eszközöket, technológiát használtatok
+            - pl. Mysql adatbázis, Vusj kliens, Nodejs Backend, github
+        - Az adatbázis bemutatása
+            - Diagram, táblák feladatai
+            - A táblák és a szerkezetük
+            - Honnan származnak az adatok       
+            - Volt-e vbalmilyen plusz adatgyűjtés
+        - A program működés közbeni bemutatása (`anglul`) (3-5 perc/fő)   
+            - Felváltva, vagy valamilyen felosztás szerint            
+            - bejelentkezés
+            - Menü szerkezet
+            - Mit tud a program
+            - Milyen műveleteket lehet végezni
+            - A reszponzivitás bemutatása (teszt környezetben)
+        - Meddig jutottatok el
+        - Mi az, amivel esetleg nem végeztetek (ha van ilyen)
+        - Milyen irányban kell továbbfejleszteni
+        - Egy-egy kód részletet kiemelni és bemutatni példák (amiről lehet beszélni)
+            - Backend
+                - Mappa szerekezet
+                - Forrás adatok
+                - Backend technológia (laravel)
+                - Migráció
+                - Seeder
+                - Bejelentkezés, token
+                - Endpointok
+                - Kontrollerek: CRUD műveletek, speciális lekérdezések
+                - Validálás
+                - MiddleWare: védett tartalmak kezelése
+                - Kézi tesztelés
+                - Tesztek bemutatása
+            - Frontend
+                - Mappa szerkezet
+                - A program belépési pontja
+                - Menü - rout megvalósítás
+                - Bejelentkezés, regizstráció, logout
+                - Crud műveletek megvalósítása
+                - Kliens oldali validáció az űrlapokon
+                - Ajax kérések
+                - Speciális feladatok
+                - Kliens oldali tesztek
+
+
+# Egyéb előírások
 - nyelvi előírások
     - Az objektumok (adatbázis, mező nevek, függvények, vátlozók stb. ) elnevezései angol nyelvűek.
     - A produktum működési felülete akármilyen nyelvű lehet.
