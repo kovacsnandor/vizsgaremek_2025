@@ -109,6 +109,7 @@ A feladatot az alábbi előírásoknak megfelelően kell elkészíteni
 Két mappa:
 - `Backend`
 - `Frontend`
+- `DokumnetacioKepek`
 ### Dokumentumok
 A dokumentumok a repo gyökér könyvtárába kerüljenek, pontosan ilyen elnevezésekkel
 
@@ -120,21 +121,34 @@ A dokumentumok a repo gyökér könyvtárába kerüljenek, pontosan ilyen elneve
 - `Dokumentáció.md` (A szoftver célja, komponenseinek technikai leírása, használatának rövid bemutatása)
     - A szoftver célja: A feladat rövid leírása
     - Használatának rövid bemutatása: Képerynőképekkel, hogy működik a program
-    - komponenseinek technikai leírása: 
-        - Mappa struktúra
+    - Komponenseinek technikai leírása: 
         - Adatbázis 
-            - diagram
+            - Technológia, használt szoftverek
+            - Diagram
             - Tábla és mezőleírások
         - Backend
-            - endpointok
-            - Auth server
+            - A technológia
+                - Laravel, és hogy települ
+                - Használt laravel parancsok
+            - Migráció
+                - Mintakód, leírás
+            - Seeder
+                - Forrás adatok
+                    - Felsorolás
+                    - Minták
+                - Seeder szerekzete
+                    - Seeder mintakód 
+            - Endpointok
+                - MiddleWare: védett tartalmak kezelése
+                - Minta endpointok kódja, rövid leírása
+                    - Minta kontroller
+                    - Minta model
+                    - Minta validáció
+            - Autentikáció
                 - Bejelentkezés
                 - Token
 
         - Frontend leírás
-            - Mi a program célja
-            - Használati útmutató
-                - Le kell írni, képernyő képekkel hogy a produktumot hogy kell használni
             - Milyen modulok
             - Oldal szerkezet
                 - Belépési pont: App.vue, main.js
@@ -145,10 +159,19 @@ A dokumentumok a repo gyökér könyvtárába kerüljenek, pontosan ilyen elneve
                 - Menü szinten
                 - Route szinten   
             - Milyen fájlok
-                - store
+                - store (pinia)
                 - komponensek
                 - views
                 - router
+            - Program szerkezet: mintakód, rövid leírás
+                - kártyák
+                - lapozás
+                - űrlapok, validálás
+                - komponensek 
+                - dizájn, reszponzivitás   
+
+        - Forráslista a munkához
+
 - `Tesztek.md` (A tesztekhez végzett kód, valamint a teszteredmények dokumentációja)
     - Kézi teszt: pingelés (request rest)
         - request.rest szerkezete
